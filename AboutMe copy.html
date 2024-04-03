@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Me</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <nav class="link-locations">
+            <a href="index.html" class="links">Back to Home</a>
+        </nav>
+        <div class="centered-title">
+            <h1>About Me!</h1>
+        </div>
+        <div id="contentGrid" class="container">
+            <img id="suitImage" src="MeSuit.jpg" alt="Me in a suit" width="600" height="700">
+            <img id="gradImage" src="GradPic.jpg" alt="My grad picture" width="600" height="700">
+            
+            <div class="form-container">
+                <form id="feedbackForm" action="#">
+                    <h2>Feedback Form</h2>
+                    <div class="input-container">
+                        <label for="enjoyed">Did you enjoy the website?</label>
+                        <select id="enjoyed" name="enjoyed">
+                            <option value="">Please select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unsure">Not sure</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="learned">Did the website teach you anything?</label>
+                        <select id="learned" name="learned">
+                            <option value="">Please select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="unsure">Not sure</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="addition">What should be added to the website?</label>
+                        <textarea id="addition" name="addition"></textarea>
+                    </div>
+                    <div class="input-container">
+                        <label for="removal">What should be removed from the website?</label>
+                        <textarea id="removal" name="removal"></textarea>
+                    </div>
+                    <div class="input-container">
+                        <label for="referral">How did you hear about the website?</label>
+                        <input type="text" id="referral" name="referral">
+                    </div>
+                    <div class="button-container">
+                        <input id="submit-button" type="submit" value="Submit Feedback">
+                    </div>
+                    <div id="message-panel"></div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <p>
+                A song I like:
+            </p>
+            <audio controls>
+                <source src="Hot Young Thug.mp3" type="audio/mpeg">
+            </audio>
+        </footer>
+        <script src="code.js"></script>
+    </body>
+</html>
