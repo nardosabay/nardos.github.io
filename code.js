@@ -61,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
         messagePanel.innerHTML = isValid ? "Feedback submitted successfully. Thanks!" : "Please fill in all fields!";
         messagePanel.style.backgroundColor = isValid ? "green" : "red";
         messagePanel.style.color = "white";
-        if (isValid) {
-            feedbackForm.reset();
-        }
+        //reset form
+        feedbackForm.reset();
     });
 });
 
